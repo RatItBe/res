@@ -1,0 +1,14 @@
+{
+	"num_mip_levels": 4,
+	"padding": 8,
+	"resource_pack_name": "Cake Template",
+	"texture_name": "atlas.terrain",
+	"texture_data": {
+		"fs:bacon_n_egg":{
+			"textures":"textures/blocks/bacon_n_egg"
+		},
+		"fs:cooking_pot":{
+			"textures":"textures/blocks/cooking_pot"
+		}
+	}
+}
