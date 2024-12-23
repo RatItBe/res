@@ -1,0 +1,39 @@
+{
+  "format_version": "1.18.31",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "fs:mg50",
+      "materials": {
+        "default": "entity_emissive_alpha",
+        "enchanted": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/mg50",
+        "enchanted": "textures/entity/mg50"
+      },
+      "geometry": {
+        "default": "geometry.mg50"
+      },
+      "particle_effects": {
+        "muzzle": "fs:smoke"
+      },
+      "animations": {
+        "fpp_hold":"animation.mg50.fpp",
+        "tpp_hold":"animation.mg50.tpp",
+        "shoot":"animation.mg50.shoot"
+      },
+      "scripts": {
+        "animate":[
+          {"fpp_hold":"c.is_first_person"},
+          {"tpp_hold":"!c.is_first_person"},
+          {
+            "shoot":"q.is_using_item && q.is_sneaking"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.item_default"
+      ]
+    }
+  }
+}

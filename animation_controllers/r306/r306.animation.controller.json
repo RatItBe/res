@@ -1,0 +1,71 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.r306.aim": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						"fpp_hold"
+					],
+					"transitions": [
+						{
+							"fpp_aim": "c.is_first_person && q.is_sneaking"
+						}
+					],
+					"blend_transition": 0.4
+				},
+				"fpp_aim": {
+					"animations": [
+						"fpp_aim"
+					],
+					"transitions": [
+						{
+							"default": "!c.is_first_person || !q.is_sneaking"
+						}
+					],
+					"blend_transition": 0.4
+				}
+			}
+		},
+		"controller.animation.r306.shoot": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [{
+						"shoot_rdy":"q.is_using_item"
+					}]
+				},
+				"shoot_rdy":{
+					"transitions": [{
+						"shoot":"!q.is_using_item"
+					}]
+				},
+				"shoot":{
+					"animations":["shoot"],
+					"transitions": [{
+						"default":"!q.is_using_item && q.all_animations_finished"
+					}]
+				}
+			}
+		},
+		"controller.animation.r306.reload": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [{
+						"reload": "q.is_using_item"
+					}]
+				},
+				"reload": {
+					"animations": [
+						"reload"
+					],
+					"transitions": [{
+						"default": "!q.is_using_item"
+					}]
+				}
+			}
+		}
+	}
+}

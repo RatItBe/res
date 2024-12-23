@@ -1,0 +1,25 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.bacon.fpp": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"root_item": {
+					"rotation": [-51.07189, -244.09488, -250.12818],
+					"position": [3.81838, 19.19615, -4.33279],
+					"scale": 0.5
+				}
+			}
+		},
+		"animation.bacon.tpp": {
+			"loop": true,
+			"bones": {
+				"root_item": {
+					"rotation": [0, -180, 0],
+					"position": [-2.4, 21.25037, -5.69402],
+					"scale": 0.4
+				}
+			}
+		}
+	}
+}

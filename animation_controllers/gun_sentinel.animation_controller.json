@@ -1,0 +1,59 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.sentinel.wield": {
+			"initial_state": "first_person",
+			"states": {
+				"first_person": {
+					"animations": [
+						"fpp"
+					],
+					"transitions": [
+						{
+							"third_person": "!c.is_first_person"
+						}
+					]
+				},
+				"third_person": {
+					"animations": [
+						"tpp"
+					],
+					"transitions": [
+						{
+							"first_person": "c.is_first_person"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.sentinel.shoot": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"shoot_rdy": "q.is_using_item"
+						}
+					]
+				},
+				"shoot_rdy": {
+					"transitions": [
+						{
+							"shoot": "!q.is_using_item"
+						}
+					]
+				},
+				"shoot": {
+					"animations": [
+						"bolt_action"
+					],
+					"transitions": [
+						{
+							"default": "!q.is_using_item && q.all_animations_finished"
+						}
+					]
+				}
+			}
+		}
+	}
+}

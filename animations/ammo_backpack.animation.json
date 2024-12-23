@@ -1,0 +1,29 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.ammo_backpack.fpp": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"backpack": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.ammo_backpack.tpp": {
+			"loop": true,
+			"bones": {
+				"backpack": {
+					"scale": 1
+				},
+				"lid": {
+					"rotation": [0, 0, 9],
+					"position": [0.3, 0, 0]
+				},
+				"ammo_chain": {
+					"position": [2.6, 0.6, 0],
+					"scale": 0.5
+				}
+			}
+		}
+	}
+}

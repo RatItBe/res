@@ -1,0 +1,108 @@
+{
+	"format_version": "1.18.31",
+	"animations": {
+		"animation.h8r.fpp": {
+			"loop": true,
+			"bones": {
+				"pistol_main": {
+					"rotation": [-20, 60, -60],
+					"position": [-1.3314, 1.45272, 0.34202]
+				},
+				"laser": {
+					"scale": "query.equipped_item_any_tag('slot.weapon.mainhand','fs:laser_sight')"
+				},
+				"red_dot": {
+					"scale": "query.equipped_item_any_tag('slot.weapon.mainhand','fs:sight_up')"
+				},
+				"beam": {
+					"position": [0, 18, 0],
+					"scale": [1, 75, 1]
+				},
+				"fpp": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.h8r.shoot": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.5,
+			"bones": {
+				"pistol_main": {
+					"rotation": {
+						"0.0": [-60, 0, 0],
+						"0.125": [0, 0, 0]
+					},
+					"scale": {
+						"0.0": [1, 0.5, 1],
+						"0.2083": [1, 1, 1]
+					}
+				},
+				"fpp": {
+					"rotation": {
+						"0.0": [0, 60, 0],
+						"0.125": [0, 0, 0]
+					},
+					"scale": {
+						"0.0": [1, 0.5, 1],
+						"0.2083": [1, 1, 1]
+					}
+				}
+			},
+			"particle_effects": {
+				"0.0833": {
+					"effect": "muzzle",
+					"locator": "muzzle"
+				}
+			}
+		},
+		"animation.h8r.fpp_run": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"pistol_main": {
+					"rotation": [-90, 60, -60]
+				}
+			}
+		},
+		"animation.h8r.tpp": {
+			"loop": true,
+			"bones": {
+				"pistol_main": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 1]
+				},
+				"laser": {
+					"scale": "query.equipped_item_any_tag('slot.weapon.mainhand','fs:laser_sight')"
+				},
+				"red_dot": {
+					"scale": "query.equipped_item_any_tag('slot.weapon.mainhand','fs:sight_up')"
+				},
+				"beam": {
+					"position": [0, 18, 0],
+					"scale": [1, 75, 1]
+				},
+				"fpp": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.h8r.tpp_run": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"pistol_main": {
+					"rotation": [-75, 0, 0]
+				}
+			}
+		},
+		"animation.h8r.fpp_aim": {
+			"loop": true,
+			"bones": {
+				"fpp": {
+					"scale": 1
+				},
+				"pistol_main": {
+					"scale": 0
+				}
+			}
+		}
+	}
+}

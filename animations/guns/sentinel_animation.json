@@ -1,0 +1,98 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.sentinel.tpp": {
+			"loop": true,
+			"bones": {
+				"gun": {
+					"position": [0, 0, 0.9],
+					"scale": 1.5
+				},
+				"dot": {
+					"position": [0, 0, 1.4],
+					"scale": 0
+				},
+				"head": {
+					"scale": 0
+				},
+				"reticle": {
+					"scale": 0
+				},
+				"scope": {
+					"scale": 0
+				},
+				"bolt2": {
+					"position": [0, 0, -0.1],
+					"scale": [1, 1, 0.7]
+				}
+			}
+		},
+		"animation.sentinel.fpp": {
+			"loop": true,
+			"bones": {
+				"gun": {
+					"rotation": [-20, 60, -60],
+					"position": [-2, 2, 2],
+					"scale": "2-math.abs(2*q.is_sneaking*q.is_using_item)"
+				},
+				"dot": {
+					"position": [0, 0, -4.3],
+					"scale": 0.15
+				},
+				"head": {
+					"position": [0.025, 3.5, -5],
+					"scale": "math.abs(q.is_sneaking*1*q.is_using_item)"
+				},
+				"scope": {
+					"position": [0.025, 0, -3.8],
+					"scale": "math.abs(q.is_sneaking*1*q.is_using_item)"
+				},
+				"reticle": {
+					"position": [0, 0, -8.8],
+					"scale": 0.24
+				},
+				"bolt2": {
+					"position": [0, 0, -0.1],
+					"scale": [1, 1, 0.7]
+				}
+			}
+		},
+		"animation.sentinel.bolt_action": {
+			"animation_length": 0.75,
+			"bones": {
+				"bolt": {
+					"position": {
+						"0.2083": [0, 0, 0],
+						"0.3333": [0, 2, 0],
+						"0.5417": [0, 2, 0],
+						"0.6667": [0, 0, 0]
+					}
+				},
+				"handle": {
+					"rotation": {
+						"0.0833": [0, 0, 0],
+						"0.1667": [0, -60, 0],
+						"0.5833": [0, -60, 0],
+						"0.75": [0, 0, 0]
+					},
+					"position": {
+						"0.0833": [0, 0, 0],
+						"0.1667": [0, 0, -0.7],
+						"0.5833": [0, 0, -0.7],
+						"0.75": [0, 0, 0]
+					}
+				},
+				"gun": {
+					"rotation": {
+						"0.0833": [-2.26859, -60.08596, -25.71546],
+						"0.75": {"pre": [-2.26859, -60.08596, -25.71546], "post": [0, 0, 0]}
+					},
+					"scale": {
+						"0.0": [1, 0.7, 1],
+						"0.0833": [1, 1, 1]
+					}
+				}
+			}
+		}
+	}
+}

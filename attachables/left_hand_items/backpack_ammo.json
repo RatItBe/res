@@ -1,0 +1,30 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "fs:ammo_backpack",
+      "materials": {
+        "default": "armor",
+        "enchanted": "armor"
+      },
+      "textures": {
+        "default": "textures/models/armor/ammo_backpack",
+        "enchanted": "textures/models/armor/ammo_backpack"
+      },
+      "geometry": {
+        "default": "geometry.ammo_backpack"
+      },
+      "animations":{
+        "fpp_hold": "animation.left_handed.fpp",
+        "tpp_hold":"animation.ammo_backpack.tpp"
+      },
+      "scripts": {
+        "animate":[
+          {"tpp_hold":"!c.is_first_person"},
+          {"fpp_hold":"c.is_first_person"}
+        ]
+      },
+      "render_controllers": [ "controller.render.armor" ]
+    }
+  }
+}
