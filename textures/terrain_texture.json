@@ -1,7 +1,7 @@
 {
 	"num_mip_levels": 4,
 	"padding": 8,
-	"resource_pack_name": "Cake Template",
+	"resource_pack_name": "friedsoboro",
 	"texture_name": "atlas.terrain",
 	"texture_data": {
 		"fs:bacon_n_egg":{
@@ -9,6 +9,9 @@
 		},
 		"fs:cooking_pot":{
 			"textures":"textures/blocks/cooking_pot"
+		},
+		"fs:cutting_board":{
+			"textures":"textures/blocks/cutting_board"
 		}
 	}
 }
