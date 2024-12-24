@@ -95,6 +95,21 @@
 			"textures": [
 				"textures/items/fried_egg"
 			]
+		},
+		"skewer":{
+			"textures": [
+				"textures/items/skewer"
+			]
+		},
+		"cooked_skewer":{
+			"textures": [
+				"textures/items/cooked_skewer"
+			]
+		},
+		"skewer_2":{
+			"textures": [
+				"textures/items/skewer_2"
+			]
 		}
 	},
 	"resource_pack_name": "Friedsoboro",
