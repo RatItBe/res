@@ -1,0 +1,127 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.bike",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "bike",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "head",
+					"parent": "bike",
+					"pivot": [0, 8, -4]
+				},
+				{
+					"name": "frontWheel",
+					"parent": "head",
+					"pivot": [0, 0, 6],
+					"cubes": [
+						{"origin": [-1, 0, -9.3], "size": [2, 5, 5], "uv": [0, 11]},
+						{"origin": [-1, 3.2, -7.1], "size": [2, 2, 3], "inflate": 0.025, "uv": [24, 22]}
+					]
+				},
+				{
+					"name": "frontChassis",
+					"parent": "head",
+					"pivot": [1.5, 3.3, -6],
+					"cubes": [
+						{"origin": [1.4, 1.8, -7], "size": [1, 8, 1], "pivot": [1.5, 3.3, -6], "rotation": [-22.5, 0, 0], "uv": [26, 28]},
+						{"origin": [-2.5, 9.8, -7], "size": [5, 1, 1], "pivot": [1.5, 3.3, -6], "rotation": [-22.5, 0, 0], "uv": [14, 41]},
+						{"origin": [1.38579, 9.4, -2.68579], "size": [5, 1, 1], "pivot": [3.58579, 9.9, -2.18579], "rotation": [0, -45, 0], "uv": [13, 28]},
+						{"origin": [-6.38579, 9.4, -2.68579], "size": [5, 1, 1], "pivot": [-3.58579, 9.9, -2.18579], "rotation": [0, 45, 0], "uv": [13, 28], "mirror": true},
+						{"origin": [-2.4, 1.8, -7], "size": [1, 8, 1], "pivot": [-1.5, 3.3, -6], "rotation": [-22.5, 0, 0], "uv": [26, 28], "mirror": true},
+						{"origin": [-5.38579, 9.4, -2.68579], "size": [3, 1, 1], "inflate": 0.05, "pivot": [-3.58579, 9.9, -2.18579], "rotation": [0, 45, 0], "uv": [15, 37], "mirror": true},
+						{"origin": [2.38579, 9.4, -2.68579], "size": [3, 1, 1], "inflate": 0.05, "pivot": [3.58579, 9.9, -2.18579], "rotation": [0, -45, 0], "uv": [15, 37]},
+						{"origin": [-2.5, 7.3, -7], "size": [5, 1, 1], "inflate": 0.025, "pivot": [1.5, 3.3, -6], "rotation": [-22.5, 0, 0], "uv": [14, 41]},
+						{"origin": [0.9, 3.8, -7.5], "size": [2, 3, 2], "inflate": -0.4, "pivot": [1.5, 3.3, -6], "rotation": [-22.5, 0, 0], "uv": [0, 29]},
+						{"origin": [-2.9, 3.8, -7.5], "size": [2, 3, 2], "inflate": -0.4, "pivot": [-1.5, 3.3, -6], "rotation": [-22.5, 0, 0], "uv": [0, 29], "mirror": true},
+						{"origin": [-2.5, 1.8, -7], "size": [5, 1, 1], "inflate": 0.025, "pivot": [1.5, 3.3, -6], "rotation": [-22.5, 0, 0], "uv": [14, 41]}
+					]
+				},
+				{
+					"name": "headlight",
+					"parent": "head",
+					"pivot": [0, 7.7, -5.2],
+					"cubes": [
+						{"origin": [-1.5, 6.3, -6.6], "size": [3, 3, 2], "inflate": -0.5, "uv": [13, 22]},
+						{"origin": [-1, 6.8, -5.6], "size": [2, 2, 2], "inflate": -0.2, "uv": [30, 9]}
+					]
+				},
+				{
+					"name": "rearWheel",
+					"parent": "bike",
+					"pivot": [0, 0, 5],
+					"cubes": [
+						{"origin": [-1, 0, 5], "size": [2, 5, 5], "uv": [15, 11]},
+						{"origin": [-1, 3.5, 4.5], "size": [2, 2, 6], "inflate": 0.025, "uv": [17, 0]}
+					]
+				},
+				{
+					"name": "engine",
+					"parent": "bike",
+					"pivot": [0, 5.3, -1.6],
+					"cubes": [
+						{"origin": [-1, 1.8, -3.1], "size": [2, 5, 7], "pivot": [0, 5.3, -1.6], "rotation": [4, 0, 0], "uv": [32, 25]},
+						{"origin": [-1, 1.9, -3.5], "size": [2, 5, 1], "inflate": 0.21, "pivot": [0, 5.3, -1.6], "rotation": [10, 0, 0], "uv": [18, 49]},
+						{"origin": [-1, 1.8, -3.1], "size": [2, 1, 7], "inflate": 0.2, "pivot": [0, 5.3, -1.6], "rotation": [4, 0, 0], "uv": [18, 49]}
+					]
+				},
+				{
+					"name": "saddle",
+					"parent": "bike",
+					"pivot": [0, 6, 1.3],
+					"cubes": [
+						{"origin": [1.5, 6.2, 3.3], "size": [2, 1, 6], "pivot": [2.5, 4.8, 7.3], "rotation": [0, 0, -7.5], "uv": [38, 50], "mirror": true},
+						{"origin": [-3.5, 3, 3.3], "size": [2, 4, 6], "inflate": -0.1, "pivot": [-2.5, 4.8, 7.3], "rotation": [0, 0, 7.5], "uv": [0, 48]},
+						{"origin": [-3.5, 6.2, 3.3], "size": [2, 1, 6], "pivot": [-2.5, 4.8, 7.3], "rotation": [0, 0, 7.5], "uv": [38, 50]},
+						{"origin": [-1.5, 5.8, 2.3], "size": [3, 2, 7], "inflate": -0.1, "uv": [21, 38]},
+						{"origin": [-1.5, 5.3, -4.4], "size": [3, 3, 7], "pivot": [0, 6, 1.3], "rotation": [-5, 0, 0], "uv": [0, 38]},
+						{"origin": [-3.7, 5.8, 5.8], "size": [1, 1, 1], "inflate": -0.2, "uv": [33, 20]}
+					]
+				},
+				{
+					"name": "rearChassis",
+					"parent": "bike",
+					"pivot": [-1.275, 2.43131, 7.51665],
+					"cubes": [
+						{"origin": [-2, 2, 7], "size": [4, 1, 1], "inflate": 0.025, "pivot": [0, 2.56746, 7.55538], "rotation": [-45, 0, 0], "uv": [30, 14]},
+						{"origin": [-1.875, 2.05, 2.6], "size": [1, 1, 5], "pivot": [-1.875, 2.55, 7.475], "rotation": [-5, 0, 0], "uv": [-4, -3], "mirror": true},
+						{"origin": [0.875, 2.05, 2.6], "size": [1, 1, 5], "pivot": [1.875, 2.55, 7.475], "rotation": [-5, 0, 0], "uv": [-4, -3]},
+						{"origin": [0.925, 2.43131, 2.61665], "size": [1, 1, 1], "inflate": 0.1, "uv": [31, 28]},
+						{"origin": [0.975, 3.43131, 7.01665], "size": [1, 2, 1], "inflate": -0.2, "pivot": [1.275, 2.43131, 7.51665], "rotation": [0, 0, -5], "uv": [14, 31]},
+						{"origin": [0.975, 2.43131, 7.01665], "size": [1, 4, 1], "inflate": -0.3, "pivot": [1.275, 2.43131, 7.51665], "rotation": [0, 0, -5], "uv": [9, 31]},
+						{"origin": [-1.975, 2.43131, 7.01665], "size": [1, 4, 1], "inflate": -0.3, "pivot": [-1.275, 2.43131, 7.51665], "rotation": [0, 0, 5], "uv": [9, 31], "mirror": true},
+						{"origin": [-1.975, 3.43131, 7.01665], "size": [1, 2, 1], "inflate": -0.2, "pivot": [-1.275, 2.43131, 7.51665], "rotation": [0, 0, 5], "uv": [14, 31], "mirror": true}
+					]
+				},
+				{
+					"name": "rearChassis2",
+					"parent": "bike",
+					"pivot": [1.275, 2.43131, 7.51665],
+					"cubes": [
+						{"origin": [-1.925, 2.43131, 2.61665], "size": [1, 1, 1], "inflate": 0.1, "uv": [31, 28], "mirror": true}
+					]
+				},
+				{
+					"name": "saddle2",
+					"parent": "bike",
+					"pivot": [0, 6, 1.3],
+					"cubes": [
+						{"origin": [1.5, 3, 3.3], "size": [2, 4, 6], "inflate": -0.1, "pivot": [2.5, 4.8, 7.3], "rotation": [0, 0, -7.5], "uv": [0, 48], "mirror": true},
+						{"origin": [-1, 6, 0.3], "size": [2, 2, 2], "uv": [0, 0], "mirror": true},
+						{"origin": [2.7, 5.8, 5.8], "size": [1, 1, 1], "inflate": -0.2, "uv": [33, 20], "mirror": true}
+					]
+				}
+			]
+		}
+	]
+}

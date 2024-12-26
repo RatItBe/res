@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "fs:bike",
+      "materials": {
+        "default": "entity_emissive_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/bike"
+      },
+      "geometry": {
+        "default": "geometry.bike"
+      },
+      "animations": {
+        "h8r": "animation.h8r.last"
+      },
+      "scripts": {},
+      "render_controllers": [
+        "controller.render.iron_golem"
+      ]
+    }
+  }
+}
