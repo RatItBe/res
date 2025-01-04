@@ -1,0 +1,23 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "fs:plague_doctor_coat",
+      "materials": {
+        "default": "armor",
+        "enchanted": "armor"
+      },
+      "textures": {
+        "default": "textures/models/armor/plague_dr",
+        "enchanted": "textures/models/armor/plague_dr"
+      },
+      "geometry": {
+        "default": "geometry.plagueDrRobe"
+      },
+      "scripts": {
+        "parent_setup": "variable.chest_layer_visible = 0.0;"
+      },
+      "render_controllers": [ "controller.render.armor" ]
+    }
+  }
+}
