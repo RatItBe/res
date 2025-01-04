@@ -8,23 +8,32 @@
         "enchanted": "entity_alphatest"
       },
       "textures": {
-        "default": "textures/entity/sentinel_e",
+        "default": "textures/entity/sentinel_test",
         "enchanted": "textures/entity/sentinel"
       },
       "geometry": {
-        "default": "geometry.sentinel_empty"
+        "default": "geometry.sentinel_test"
       },
       "particle_effects": {
         "muzzle": "minecraft:basic_flame_particle"
       },
       "animations":{
-        "fpp":"animation.sentinel.fpp",
+        "fpp":"animation.sentinel.fpp_empty",
         "tpp":"animation.sentinel.tpp",
-        "fpp_or_tpp":"controller.animation.sentinel.wield"
+        "reload_ctrl":"controller.animation.sentinel.reload",
+        "reload":"animation.sentinel.reload"
       },
       "scripts":{
         "animate":[
-          "fpp_or_tpp"
+          {
+            "fpp":"c.is_first_person"
+          },
+          {
+            "tpp":"!c.is_first_person"
+          },
+          {
+            "reload_ctrl":"t.val = 0; t.i = 0; loop(27, {t.val = q.is_item_name_any('slot.inventory', t.i, 'fs:sniper_ammo'); t.val ? {return t.val;}; t.i = t.i+1;});"
+          }
         ]
       },
       
