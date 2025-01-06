@@ -2,7 +2,7 @@
   "format_version": "1.18.31",
   "minecraft:attachable": {
     "description": {
-      "identifier": "fs_shotty_e:bow",
+      "identifier": "fs:shotty_l",
       "materials": {
         "default": "entity_emissive_alpha",
         "enchanted": "entity_alphatest_glint"
@@ -18,17 +18,20 @@
         "muzzle": "minecraft:basic_flame_particle"
       },
       "animations":{
-        "fpp_hold":"animation.shotty.fpp_e",
-        "tpp_hold":"animation.shotty.tpp_e",
-        "fpp_or_tpp":"controller.animation.shotty_e.wield",
-        "reload_controller":"controller.animation.shotty.reloading",
-        "reload":"animation.shotty.reload",
-        "reload_tpp":"animation.shotty.reload_tpp"
+        "fpp_hold":"animation.shotty.fpp",
+        "tpp_hold":"animation.shotty.tpp",
+        "after_shoot":"animation.shotty.shoot",
+        "pump_ctrl":"controller.animation.gun.after_shoot"
       },
       "scripts":{
         "animate":[
-          "fpp_or_tpp",
-          "reload_controller"
+          "pump_ctrl",
+          {
+            "fpp_hold":"c.is_first_person"
+          },
+          {
+            "tpp_hold":"!c.is_first_person"
+          }
         ]
       },
       

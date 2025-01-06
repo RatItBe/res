@@ -153,6 +153,55 @@
 				]
 			},
 			{
+				"name": "smoke",
+				"parent": "barrel",
+				"pivot": [-6, -2.36843, -2.94461],
+				"cubes": [
+					{"origin": [-10, -2.36843, -6.94461], "size": [8, 0, 8], "uv": [8, 24]}
+				]
+			},
+			{
+				"name": "flash",
+				"parent": "barrel",
+				"pivot": [-6, -3.16843, -2.94461]
+			},
+			{
+				"name": "flash_right",
+				"parent": "flash",
+				"pivot": [-6.9, -3.16843, -2.94461],
+				"rotation": [0, 0, -45],
+				"cubes": [
+					{"origin": [-7.5, -3.16843, -4.44461], "size": [3, 0, 3], "uv": [1, 23]}
+				]
+			},
+			{
+				"name": "flash_left",
+				"parent": "flash",
+				"pivot": [-5.1, -3.16843, -2.94461],
+				"rotation": [0, 0, 45],
+				"cubes": [
+					{"origin": [-7.5, -3.16843, -4.44461], "size": [3, 0, 3], "uv": [1, 23]}
+				]
+			},
+			{
+				"name": "flash_down",
+				"parent": "flash",
+				"pivot": [-6, -3.16843, -2.04461],
+				"rotation": [-45, 0, 0],
+				"cubes": [
+					{"origin": [-7.5, -3.16843, -4.44461], "size": [3, 0, 3], "uv": [1, 23]}
+				]
+			},
+			{
+				"name": "flash_up",
+				"parent": "flash",
+				"pivot": [-6, -3.16843, -3.84461],
+				"rotation": [45, 0, 0],
+				"cubes": [
+					{"origin": [-7.5, -3.16843, -4.44461], "size": [3, 0, 3], "uv": [1, 23]}
+				]
+			},
+			{
 				"name": "sight",
 				"parent": "shottie",
 				"pivot": [0.5, -8.6, -0.5]
