@@ -1,0 +1,44 @@
+{
+  "format_version": "1.18.31",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "fs:handcannon_e",
+      "materials": {
+        "default": "entity_emissive_alpha",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/entity/handcannon",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": {
+        "default": "geometry.handcannon"
+      },
+      "particle_effects": {
+        "muzzle": "minecraft:water_evaporation_bucket_emitter"
+      },
+      "animations":{
+        "fpp":"animation.handcannon.fpp",
+        "tpp":"animation.handcannon.tpp",
+        "reload_tpp":"animation.handcannon.reload_tpp",
+        "reload_fpp":"animation.handcannon.reload_fpp",
+        "reload_ctrl":"controller.animation.handcannon.reload"
+      },
+      "scripts":{
+        "animate":[
+          {
+            "fpp":"c.is_first_person"
+          },
+          {
+            "tpp":"!c.is_first_person"
+          },
+          {
+            "reload_ctrl":"t.val = 0; t.i = 0; loop(27, {t.val = q.is_item_name_any('slot.inventory', t.i, 'fs:sniper_ammo'); t.val ? {return t.val;}; t.i = t.i+1;});"
+          }
+        ]
+      },
+      
+      "render_controllers": [ "controller.render.item_default" ]
+    }
+  }
+}

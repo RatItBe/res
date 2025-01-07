@@ -1,31 +1,6 @@
 {
 	"format_version": "1.10.0",
-	"animation_controllers": {
-		"controller.animation.handcannon.wield": {
-			"initial_state": "first_person",
-			"states": {
-				"first_person": {
-					"animations": [
-						"fpp"
-					],
-					"transitions": [
-						{
-							"third_person": "!c.is_first_person"
-						}
-					]
-				},
-				"third_person": {
-					"animations": [
-						"tpp"
-					],
-					"transitions": [
-						{
-							"first_person": "c.is_first_person"
-						}
-					]
-				}
-			}
-		},
+	"animation_controllers": {		
 		"controller.animation.handcannon.shoot":{
 			"initial_state":"idle",
 			"states": {
@@ -50,6 +25,33 @@
 					"transitions":[
 						{
 							"idle": "q.all_animations_finished"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.handcannon.reload": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"reload": "q.is_using_item"
+						}
+					]
+				},
+				"reload": {
+					"animations": [
+						{
+							"reload_tpp":"!c.is_first_person"
+						},
+						{
+							"reload_fpp":"c.is_first_person"
+						}
+					],
+					"transitions": [
+						{
+							"default": "!q.is_using_item || q.all_animations_finished"
 						}
 					]
 				}

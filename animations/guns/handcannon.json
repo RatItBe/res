@@ -14,32 +14,25 @@
 				}
 			}
 		},
-		"animation.handcannon.tpp": {
-			"loop": "hold_on_last_frame",
-			"bones": {
-				"maingun": {
-					"rotation": [-180, 0, 0],
-					"position": [0, -1, -5],
-					"scale": 0.75
-				},
-				"sight": {
-					"scale": 0.15
-				}
-			}
-		},
 		"animation.handcannon.shoot": {
 			"animation_length": 0.5,
 			"bones": {
 				"barrel3": {
 					"position": {
 						"0.0": [0, 0, -17],
-						"0.3333": [0, 0, 0]
+						"0.25": [0, 0, 0]
 					}
 				},
 				"maingun": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0833": [15, 0, 0],
+						"0.25": [0, 0, 0]
+					},
+					"position": [0, 0, 0],
 					"scale": {
 						"0.0": [1, 1, 1],
-						"0.0833": [1.1, 1.1, 1.1],
+						"0.0833": [1.3, 1.3, 1.3],
 						"0.25": [1, 1, 1]
 					}
 				},
@@ -55,6 +48,123 @@
 				"0.0": {
 					"effect": "muzzle",
 					"locator": "muzzle"
+				}
+			}
+		},
+		"animation.handcannon.tpp": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"maingun": {
+					"rotation": [-180, 0, 0],
+					"position": [0, -1, -5],
+					"scale": 0.75
+				},
+				"sight": {
+					"scale": 0.15
+				}
+			}
+		},
+		"animation.handcannon.reload_tpp": {
+			"animation_length": 3.75,
+			"bones": {
+				"maingun": {
+					"rotation": [-45, 0, -90],
+					"position": [5.2701, -8.29024, 4.74007]
+				},
+				"breach": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0833": [0, -125, 0],
+						"2.75": [0, -125, 0],
+						"2.8333": [0, 0, 0]
+					}
+				},
+				"shell": {
+					"rotation": {
+						"0.3333": [0, 0, 0],
+						"0.75": {
+							"pre": [0, "math.abs(q.anim_time*270)", "math.abs(q.anim_time*270)"],
+							"post": [0, 0, 0]
+						}
+					},
+					"position": {
+						"0.25": {
+							"pre": [0, 0, 0],
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.3333": {
+							"post": [0, 0, -12],
+							"lerp_mode": "catmullrom"
+						},
+						"0.5": {
+							"post": [13, 0, -21],
+							"lerp_mode": "catmullrom"
+						},
+						"0.75": [13, 0, 0],
+						"2.125": [0, 0, -32],
+						"2.4167": [0, 0, 0]
+					},
+					"scale": {
+						"0.3333": [1, 1, 1],
+						"0.75": [0, 0, 0],
+						"2.125": {
+							"pre": [0, 0, 0],
+							"post": [1, 1, 1]
+						}
+					}
+				},
+				"shell_tip": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.handcannon.reload_fpp": {
+			"animation_length": 3.75,
+			"bones": {
+				"maingun": {
+					"rotation": [43.24757, 78.32366, -76.86514],
+					"position": [23.25292, 7.33129, -21.99768]
+				},
+				"breach": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0833": [0, -125, 0],
+						"2.75": [0, -125, 0],
+						"2.8333": [0, 0, 0]
+					}
+				},
+				"shell": {
+					"rotation": {
+						"0.3333": [0, 0, 0],
+						"0.75": {"pre": [0, "math.abs(q.anim_time*270)", "math.abs(q.anim_time*270)"], "post": [0, 0, 0]}
+					},
+					"position": {
+						"0.25": {
+							"pre": [0, 0, 0],
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.3333": {
+							"post": [0, 0, -12],
+							"lerp_mode": "catmullrom"
+						},
+						"0.5": {
+							"post": [13, 0, -21],
+							"lerp_mode": "catmullrom"
+						},
+						"0.75": [13, 0, 0],
+						"2.125": [0, 0, -32],
+						"2.4167": [0, 0, 0]
+					},
+					"scale": {
+						"0.3333": [1, 1, 1],
+						"0.75": [0, 0, 0],
+						"2.125": {"pre": [0, 0, 0], "post": [1, 1, 1]}
+					}
+				},
+				"shell_tip": {
+					"scale": 0
 				}
 			}
 		}

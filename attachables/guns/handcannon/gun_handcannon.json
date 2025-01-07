@@ -20,13 +20,17 @@
       "animations":{
         "fpp":"animation.handcannon.fpp",
         "tpp":"animation.handcannon.tpp",
-        "fpp_or_tpp":"controller.animation.handcannon.wield",
         "shot":"animation.handcannon.shoot",
         "shot_ctrl":"controller.animation.handcannon.shoot"
       },
       "scripts":{
         "animate":[
-          "fpp_or_tpp",
+          {
+            "fpp":"c.is_first_person"
+          },
+          {
+            "tpp":"!c.is_first_person"
+          },
           "shot_ctrl"
         ]
       },
