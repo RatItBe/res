@@ -1,7 +1,7 @@
 {
 	"format_version": "1.10.0",
 	"animation_controllers": {		
-		"controller.animation.shotty.reloading": {
+		"controller.animation.common.reload": {
 			"initial_state": "default",
 			"states": {
 				"default": {

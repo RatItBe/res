@@ -48,6 +48,12 @@
 			"sounds": [
 				"sounds/boom"
 			]
+		},
+		"fs_flak88": {
+			"category": "player",
+			"sounds": [
+				"sounds/88flak"
+			]
 		}
 	}
 }
