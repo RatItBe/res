@@ -110,6 +110,11 @@
 			"textures": [
 				"textures/items/skewer_2"
 			]
+		},
+		"plate": {
+			"textures": [
+				"textures/items/plate.png"
+			]
 		}
 	},
 	"resource_pack_name": "Friedsoboro",
