@@ -115,6 +115,11 @@
 			"textures": [
 				"textures/items/plate.png"
 			]
+		},
+		"revive_syringe": {
+			"textures": [
+				"textures/items/revive_syringe.png"
+			]
 		}
 	},
 	"resource_pack_name": "Friedsoboro",
