@@ -110,6 +110,16 @@
 			"textures": [
 				"textures/items/skewer_2"
 			]
+		},
+		"plate": {
+			"textures": [
+				"textures/items/plate.png"
+			]
+		},
+		"revive_syringe": {
+			"textures": [
+				"textures/items/revive_syringe.png"
+			]
 		}
 	},
 	"resource_pack_name": "Friedsoboro",
