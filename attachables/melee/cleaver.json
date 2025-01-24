@@ -1,0 +1,36 @@
+{
+  "format_version": "1.18.31",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "fs:cleaver",
+      "materials": {
+        "default": "entity_emissive_alpha",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/entity/cleaver",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": {
+        "default": "geometry.cleaver"
+      },
+      "animations": {
+        "fpp": "animation.cleaver.fpp",
+        "tpp": "animation.cleaver.tpp"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "fpp": "c.is_first_person"
+          },
+          {
+            "tpp": "!c.is_first_person"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.item_default"
+      ]
+    }
+  }
+}
