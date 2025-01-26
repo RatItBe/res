@@ -1,0 +1,25 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.cleaver.fpp": {
+			"loop": true,
+			"bones": {
+				"bone": {
+					"rotation": [150, 0, 43],
+					"position": [-4.5, 29, -3.5],
+					"scale": 1.3
+				}
+			}
+		},
+		"animation.cleaver.tpp": {
+			"loop": true,
+			"bones": {
+				"bone": {
+					"rotation": [90, 0, 90],
+					"position": [0, 22.7, 1],
+					"scale": 1.8
+				}
+			}
+		}
+	}
+}

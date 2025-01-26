@@ -1,0 +1,28 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.greatsword",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "bone",
+					"pivot": [0, 0, 0],
+					"binding": "q.item_slot_to_bone_name(c.item_slot)",
+					"cubes": [
+						{"origin": [-1, 0.4, -1], "size": [2, 6, 2], "inflate": -0.2, "uv": [20, 6]},
+						{"origin": [-1.5, -1.9, -1.5], "size": [3, 3, 3], "inflate": -0.5, "uv": [20, 0]},
+						{"origin": [-1.5, 6, -1], "size": [3, 3, 2], "uv": [20, 14]},
+						{"origin": [-2, 7, -0.5], "size": [4, 20, 1], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}

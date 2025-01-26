@@ -1,0 +1,68 @@
+{
+	"format_version": "1.21.20",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.cutting_board_carrot",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "bone",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "board",
+					"parent": "bone",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-7, 0, -5], "size": [14, 1, 10], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "carrot",
+					"parent": "bone",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 0, 5]
+				},
+				{
+					"name": "bone5",
+					"parent": "carrot",
+					"pivot": [3.2, 0, 0],
+					"cubes": [
+						{"origin": [1.7, 1, -0.5], "size": [2, 2, 2], "inflate": -0.3, "uv": [0, 105]}
+					]
+				},
+				{
+					"name": "bone4",
+					"parent": "carrot",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [0.2, 1, -0.5], "size": [2, 2, 2], "inflate": -0.2, "uv": [0, 116]}
+					]
+				},
+				{
+					"name": "bone3",
+					"parent": "carrot",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-1.5, 1, -0.5], "size": [2, 2, 2], "inflate": -0.1, "uv": [0, 114]}
+					]
+				},
+				{
+					"name": "bone2",
+					"parent": "carrot",
+					"pivot": [-1.9, 0, 0],
+					"cubes": [
+						{"origin": [-2.5, 1, -0.5], "size": [1, 2, 2], "inflate": 0.1, "uv": [0, 114]},
+						{"origin": [-5.5, 2, -1], "size": [3, 0, 3], "inflate": 0.1, "pivot": [-4, 2, 0.5], "rotation": [0, -45, 0], "uv": [-2, 113]}
+					]
+				}
+			]
+		}
+	]
+}
