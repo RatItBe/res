@@ -7,6 +7,9 @@
 		"fs:bacon_n_egg":{
 			"textures":"textures/blocks/bacon_n_egg"
 		},
+		"fs:sushi":{
+			"textures":"textures/blocks/sushi"
+		},
 		"fs:cooking_pot":{
 			"textures":"textures/blocks/cooking_pot"
 		},
