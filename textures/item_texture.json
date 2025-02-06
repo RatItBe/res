@@ -116,6 +116,11 @@
 				"textures/items/plate.png"
 			]
 		},
+		"ladle": {
+			"textures": [
+				"textures/items/ladle.png"
+			]
+		},
 		"revive_syringe": {
 			"textures": [
 				"textures/items/revive_syringe.png"
