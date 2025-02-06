@@ -96,6 +96,21 @@
 				"textures/items/fried_egg"
 			]
 		},
+		"water_bottle": {
+			"textures": "textures/items/water_bottle"
+		},
+		"cooking_oil": {
+			"textures": "textures/items/cooking_oil"
+		},
+		"sunflower_seed": {
+			"textures": "textures/items/sunflower_seed"
+		},
+		"roasted_sunflower_seed": {
+			"textures": "textures/items/roasted_sunflower_seed"
+		},
+		"bacon_egg": {
+			"textures": "textures/items/bacon_egg"
+		},
 		"skewer":{
 			"textures": [
 				"textures/items/skewer"
