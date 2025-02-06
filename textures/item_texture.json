@@ -106,10 +106,25 @@
 			"textures": "textures/items/sunflower_seed"
 		},
 		"roasted_sunflower_seed": {
-			"textures": "textures/items/roasted_sunflower_seed"
+			"textures": "textures/items/sunflower_seed_roasted"
 		},
 		"bacon_egg": {
 			"textures": "textures/items/bacon_egg"
+		},
+		"cutting_board": {
+			"textures": "textures/items/cutting_board"
+		},
+		"cut_cod": {
+			"textures": "textures/items/cut_cod"
+		},
+		"cut_salmon": {
+			"textures": "textures/items/cut_salmon"
+		},
+		"cut_chicken": {
+			"textures": "textures/items/cut_chicken"
+		},
+		"sushi_platter": {
+			"textures": "textures/items/sushi_platter"
 		},
 		"skewer":{
 			"textures": [
