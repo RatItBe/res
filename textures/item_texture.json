@@ -126,6 +126,9 @@
 		"sushi_platter": {
 			"textures": "textures/items/sushi_platter"
 		},
+		"fried_fish": {
+			"textures": "textures/items/fried_fish"
+		},
 		"skewer":{
 			"textures": [
 				"textures/items/skewer"
