@@ -158,6 +158,11 @@
 			"textures": [
 				"textures/items/revive_syringe.png"
 			]
+		},
+		"debug_book": {
+			"textures": [
+				"textures/items/debug_book.png"
+			]
 		}
 	},
 	"resource_pack_name": "Friedsoboro",
