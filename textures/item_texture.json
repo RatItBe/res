@@ -129,6 +129,24 @@
 		"fried_fish": {
 			"textures": "textures/items/fried_fish"
 		},
+		"small_pot": {
+			"textures": "textures/items/small_pot"
+		},
+		"cut_pork": {
+			"textures": "textures/items/cut_pork"
+		},
+		"cut_beef": {
+			"textures": "textures/items/cut_beef"
+		},
+		"cut_mutton": {
+			"textures": "textures/items/cut_mutton"
+		},
+		"flour": {
+			"textures": "textures/items/flour"
+		},
+		"jerky": {
+			"textures": "textures/items/jerky"
+		},
 		"skewer":{
 			"textures": [
 				"textures/items/skewer"
