@@ -147,6 +147,36 @@
 		"jerky": {
 			"textures": "textures/items/jerky"
 		},
+		"dough": {
+			"textures": "textures/items/dough"
+		},
+		"fried_chicken": {
+			"textures": "textures/items/fried_chicken"
+		},
+		"french_fries": {
+			"textures": "textures/items/french_fries"
+		},
+		"rice": {
+			"textures": "textures/items/rice"
+		},
+		"basic_bread": {
+			"textures": "textures/items/basic_bread"
+		},
+		"cut_bread": {
+			"textures": "textures/items/cut_bread"
+		},
+		"big_dumpling": {
+			"textures": "textures/items/big_dumpling"
+		},
+		"butcher_knife": {
+			"textures": "textures/items/butcher_knife"
+		},
+		"greatsword": {
+			"textures": "textures/items/greatsword"
+		},
+		"hotdog": {
+			"textures": "textures/items/hotdog"
+		},
 		"skewer":{
 			"textures": [
 				"textures/items/skewer"
