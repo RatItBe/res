@@ -156,6 +156,9 @@
 		"french_fries": {
 			"textures": "textures/items/french_fries"
 		},
+		"glazed_ham": {
+			"textures": "textures/items/glazed_ham"
+		},
 		"rice": {
 			"textures": "textures/items/rice"
 		},
