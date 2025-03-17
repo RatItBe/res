@@ -155,14 +155,13 @@
 			]
 		},
 		"revive_syringe": {
-			"textures": [
-				"textures/items/revive_syringe.png"
-			]
+			"textures": "textures/items/revive_syringe.png"
 		},
 		"debug_book": {
-			"textures": [
-				"textures/items/debug_book.png"
-			]
+			"textures": "textures/items/debug_book.png"
+		},
+		"keep_inv_ticket": {
+			"textures": "textures/items/keep_inv_ticket"
 		}
 	},
 	"resource_pack_name": "Friedsoboro",
