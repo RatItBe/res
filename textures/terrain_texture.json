@@ -10,8 +10,17 @@
 		"fs:sushi":{
 			"textures":"textures/blocks/sushi"
 		},
+		"fs:glazed_ham":{
+			"textures":"textures/blocks/glazed_ham"
+		},
+		"fs:fish_chips":{
+			"textures":"textures/blocks/fish_chips"
+		},
 		"fs:cooking_pot":{
 			"textures":"textures/blocks/cooking_pot"
+		},
+		"fs:stew":{
+			"textures":"textures/blocks/stew"
 		},
 		"fs:cutting_board":{
 			"textures":"textures/blocks/cutting_board"

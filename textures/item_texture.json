@@ -129,6 +129,57 @@
 		"fried_fish": {
 			"textures": "textures/items/fried_fish"
 		},
+		"small_pot": {
+			"textures": "textures/items/small_pot"
+		},
+		"cut_pork": {
+			"textures": "textures/items/cut_pork"
+		},
+		"cut_beef": {
+			"textures": "textures/items/cut_beef"
+		},
+		"cut_mutton": {
+			"textures": "textures/items/cut_mutton"
+		},
+		"flour": {
+			"textures": "textures/items/flour"
+		},
+		"jerky": {
+			"textures": "textures/items/jerky"
+		},
+		"dough": {
+			"textures": "textures/items/dough"
+		},
+		"fried_chicken": {
+			"textures": "textures/items/fried_chicken"
+		},
+		"french_fries": {
+			"textures": "textures/items/french_fries"
+		},
+		"glazed_ham": {
+			"textures": "textures/items/glazed_ham"
+		},
+		"rice": {
+			"textures": "textures/items/rice"
+		},
+		"basic_bread": {
+			"textures": "textures/items/basic_bread"
+		},
+		"cut_bread": {
+			"textures": "textures/items/cut_bread"
+		},
+		"big_dumpling": {
+			"textures": "textures/items/big_dumpling"
+		},
+		"butcher_knife": {
+			"textures": "textures/items/butcher_knife"
+		},
+		"greatsword": {
+			"textures": "textures/items/greatsword"
+		},
+		"hotdog": {
+			"textures": "textures/items/hotdog"
+		},
 		"skewer":{
 			"textures": [
 				"textures/items/skewer"

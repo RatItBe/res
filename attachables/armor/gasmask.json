@@ -1,0 +1,23 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "fs:gasmask",
+      "materials": {
+        "default": "armor",
+        "enchanted": "armor"
+      },
+      "textures": {
+        "default": "textures/models/armor/gasmask",
+        "enchanted": "textures/models/armor/gasmask"
+      },
+      "geometry": {
+        "default": "geometry.gasmask"
+      },
+      "scripts": {
+        "parent_setup": "variable.head_layer_visible = 0.0; variable.helmet_layer_visible = 0.0; variable.hat_layer_visible = 0.0;"
+      },
+      "render_controllers": [ "controller.render.armor" ]
+    }
+  }
+}
