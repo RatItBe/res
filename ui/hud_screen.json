@@ -156,7 +156,7 @@
             {
               "title_background": {
                 "type": "image",
-                "size": [ "100%sm + 30px", "100%sm + 7px" ],
+                "size": [ "100%sm + 30px", "100%sm + 5px" ],
                 "texture": "textures/ui/hud_tip_text_background",
                 "alpha": "@hud.anim_title_background_alpha_in",
                 "bindings": [
@@ -195,7 +195,7 @@
                 ],
                 "shadow": "$show_shadow",
                 "text_alignment": "center",
-                "offset": [ 0, 6 ],
+                "offset": [ 0, 2 ],
                 "bindings": [
                   {
                     "binding_name": "#hud_title_text_string",
